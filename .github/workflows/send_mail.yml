@@ -1,7 +1,7 @@
 name: keylol action
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 0,30 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
           urls: 
             f319-1
             f234-1
-          limit: 0
+          limit: 5
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v3.6.0
