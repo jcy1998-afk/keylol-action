@@ -11,10 +11,8 @@ jobs:
         uses: yuyinws/keylol-action@v1.1
         with:
           urls: 
-
             f319-1
             f234-1
-            
           limit: 0
 
       - name: Send mail
