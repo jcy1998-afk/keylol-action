@@ -11,9 +11,11 @@ jobs:
         uses: yuyinws/keylol-action@v1.1
         with:
           urls: 
-            forum.php?mod=forumdisplay&fid=319&filter=author&orderby=dateline&dateline=86400
-            forum.php?mod=forumdisplay&fid=251&filter=author&orderby=dateline
-          limit: 10
+
+            f319-1
+            f234-1
+            
+          limit: 0
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v3.6.0
